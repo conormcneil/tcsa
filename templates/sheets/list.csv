@@ -1,0 +1,3 @@
+{% extends "sheets/base.csv" %}
+{% block list %}{% for member in members %},{{ member['last_name'] }},{{ member['first_name'] }},"{{ member['order'] }}"
+{% endfor %}{% endblock %}
